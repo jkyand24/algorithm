@@ -50,3 +50,32 @@ print(result) # 정답 출력
 # DFS, BFS를 꼭 ->, ↓ 방향으로만 수행할 필요는 없다.  
 
 # 주어진 문제를 해결하기 위해서 visited 정보를 활용할수도 있다.
+
+"""
+dfs(노드)
+	아직 안왔다면
+        방문처리(노드)
+
+        주변노드 각각에 대해 
+            dfs(주변노드)
+		
+        return True 
+		
+	이미 왔다면 
+		return False
+	
+bfs(시작노드)
+    queue.append(시작노드)
+    방문처리(시작노드)
+
+    while queue:
+        현재노드 = queue.popleft()
+
+        주변노드 각각에 대해 
+        
+            아직 안왔다면 	
+                queue.append(주변노드)
+                방문처리(주변노드)
+
+    return True 
+"""
